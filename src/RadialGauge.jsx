@@ -2,13 +2,9 @@ import React from 'react';
 
 import {RadialGauge} from 'canvas-gauges';
 
-class RadialGauge extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
+class ReactRadialGauge extends React.Component {
   componentDidMount() {
-    let options = {}
+    const options = {};
     options.assign(this.props, {
       renderTo: this.el
     });
@@ -24,4 +20,4 @@ class RadialGauge extends React.Component {
   }
 }
 
-export default RadialGauge;
+export default ReactRadialGauge;
