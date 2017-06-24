@@ -2181,11 +2181,15 @@ var ReactLinearGauge = function (_React$Component) {
   _createClass(ReactLinearGauge, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
-      var options = {};
-      options.assign(this.props, {
+      var options = Object.assign({}, this.props, {
         renderTo: this.el
       });
-      new _canvasGauges.LinearGauge(options).draw();
+      this.gauge = new _canvasGauges.LinearGauge(options).draw();
+    }
+  }, {
+    key: 'componentWillReceiveProps',
+    value: function componentWillReceiveProps(nextProps) {
+      this.gauge.update(nextProps);
     }
   }, {
     key: 'render',
@@ -2242,11 +2246,15 @@ var ReactRadialGauge = function (_React$Component) {
   _createClass(ReactRadialGauge, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
-      var options = {};
-      options.assign(this.props, {
+      var options = Object.assign({}, this.props, {
         renderTo: this.el
       });
-      new _canvasGauges.RadialGauge(options).draw();
+      this.gauge = new _canvasGauges.RadialGauge(options).draw();
+    }
+  }, {
+    key: 'componentWillReceiveProps',
+    value: function componentWillReceiveProps(nextProps) {
+      this.gauge.update(nextProps);
     }
   }, {
     key: 'render',
