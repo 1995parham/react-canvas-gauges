@@ -2,13 +2,9 @@ import React from 'react';
 
 import {LinearGauge} from 'canvas-gauges';
 
-class LinearGauge extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
+class ReactLinearGauge extends React.Component {
   componentDidMount() {
-    let options = {}
+    const options = {};
     options.assign(this.props, {
       renderTo: this.el
     });
@@ -24,4 +20,4 @@ class LinearGauge extends React.Component {
   }
 }
 
-export default LenearGauge;
+export default ReactLinearGauge;
