@@ -10,3 +10,15 @@ Canvas gauges component is based on [canvas-gauges](https://canvas-gauges.com/) 
 ```
 npm install react-canvas-gauges --save
 ```
+## Example
+```jsx
+<RadialGauge
+   units='°C'
+   title='Temperature'
+   value={this.state.temperature}
+   minValue={0}
+   maxValue={50}
+   majorTicks={['0', '5', '15', '20', '25', '30', '35', '40', '45', '50']}
+   minorTicks={2}
+></RadialGauge>
+```
