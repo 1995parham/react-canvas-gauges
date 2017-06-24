@@ -1,7 +1,7 @@
 import ReactLinearGauge from './LinearGauge.jsx';
 import ReactRadialGauge from './RadialGauge.jsx';
 
-module.exports = {
-  LinearGauge: ReactLinearGauge,
-  RadialGauge: ReactRadialGauge
+export {
+  ReactLinearGauge as LinearGauge,
+  ReactRadialGauge as RadialGauge
 };
