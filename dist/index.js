@@ -5,11 +5,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.RadialGauge = exports.LinearGauge = undefined;
 
-var _LinearGauge = require('./LinearGauge.jsx');
+var _LinearGauge = require('./LinearGauge');
 
 var _LinearGauge2 = _interopRequireDefault(_LinearGauge);
 
-var _RadialGauge = require('./RadialGauge.jsx');
+var _RadialGauge = require('./RadialGauge');
 
 var _RadialGauge2 = _interopRequireDefault(_RadialGauge);
 
