@@ -4,11 +4,14 @@ import {RadialGauge} from 'canvas-gauges';
 
 class ReactRadialGauge extends React.Component {
   componentDidMount() {
-    const options = {};
-    options.assign(this.props, {
+    const options = Object.assign({}, this.props, {
       renderTo: this.el
     });
-    new RadialGauge(options).draw();
+    this.gauge = new RadialGauge(options).draw();
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.gauge.update(nextProps);
   }
 
   render() {

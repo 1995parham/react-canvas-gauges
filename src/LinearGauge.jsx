@@ -4,11 +4,14 @@ import {LinearGauge} from 'canvas-gauges';
 
 class ReactLinearGauge extends React.Component {
   componentDidMount() {
-    const options = {};
-    options.assign(this.props, {
+    const options = Object.assign({}, this.props, {
       renderTo: this.el
     });
-    new LinearGauge(options).draw();
+    this.gauge = new LinearGauge(options).draw();
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.gauge.update(nextProps);
   }
 
   render() {
