@@ -2124,11 +2124,6 @@ module.exports = __webpack_require__(29);
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.RadialGauge = exports.LinearGauge = undefined;
-
 var _LinearGauge = __webpack_require__(21);
 
 var _LinearGauge2 = _interopRequireDefault(_LinearGauge);
@@ -2139,8 +2134,10 @@ var _RadialGauge2 = _interopRequireDefault(_RadialGauge);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.LinearGauge = _LinearGauge2.default;
-exports.RadialGauge = _RadialGauge2.default;
+module.exports = {
+  LinearGauge: _LinearGauge2.default,
+  RadialGauge: _RadialGauge2.default
+};
 
 /***/ }),
 /* 21 */
