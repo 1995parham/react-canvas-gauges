@@ -3,7 +3,7 @@ import React from 'react'
 import {LinearGauge} from 'canvas-gauges'
 
 class ReactLinearGauge extends React.Component {
-  componentDidMounti () {
+  componentDidMount () {
     const options = Object.assign({}, this.props, {
       renderTo: this.el
     })
