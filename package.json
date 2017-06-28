@@ -1,6 +1,6 @@
 {
   "name": "react-canvas-gauges",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "react-canvas-gauges",
   "main": "dist/index.js",
   "scripts": {
