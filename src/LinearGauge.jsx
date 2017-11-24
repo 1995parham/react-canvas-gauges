@@ -11,6 +11,7 @@ class ReactLinearGauge extends React.Component {
   }
 
   componentWillReceiveProps (nextProps) {
+    this.gauge.value = nextProps.value
     this.gauge.update(nextProps)
   }
 
