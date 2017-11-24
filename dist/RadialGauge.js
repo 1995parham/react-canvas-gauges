@@ -40,6 +40,7 @@ var ReactRadialGauge = function (_React$Component) {
   }, {
     key: 'componentWillReceiveProps',
     value: function componentWillReceiveProps(nextProps) {
+      this.gauge.value = nextProps.value;
       this.gauge.update(nextProps);
     }
   }, {
