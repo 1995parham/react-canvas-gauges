@@ -1,14 +1,13 @@
 # react-canvas-gauges
 
-> ## ⚠️ Deprecated / Unmaintained
->
-> This project is **no longer maintained** and the GitHub repository has been **archived**. The npm package has been deprecated.
+> [!CAUTION]
+> **Deprecated / Unmaintained.** This project is **no longer maintained** and the GitHub repository has been **archived**. The npm package has been deprecated.
 >
 > - Last release: **v1.2.1 (June 2017)**.
 > - Targets React 15 and uses lifecycle methods (`componentWillReceiveProps`) that were removed/renamed in React 17 — it will not work cleanly on modern React.
 > - The upstream [`canvas-gauges`](https://github.com/Mikhus/canvas-gauges) library itself has been inactive since 2020.
 >
-> ### Recommended alternatives
+> **Recommended alternatives:**
 >
 > - [`react-gauge-component`](https://github.com/antoniolago/react-gauge-component) — actively maintained SVG-based gauges.
 > - [`@mui/x-charts` Gauge](https://mui.com/x/react-charts/gauge/) — gauge component from MUI X.
